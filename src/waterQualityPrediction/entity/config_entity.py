@@ -6,3 +6,9 @@ class DataIngestionConfig:
     root_dir: Path
     source_URL: str
     local_data_file: Path
+    
+    
+@dataclass(frozen=True)
+class DataTransformationConfig:
+    root_dir: Path
+    data_path: Path

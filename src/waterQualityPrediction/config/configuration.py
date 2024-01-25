@@ -2,7 +2,8 @@ from waterQualityPrediction.constants import *
 from waterQualityPrediction.utils import read_yaml, create_directories
 from pathlib import Path
 import os
-from waterQualityPrediction.entity import (DataIngestionConfig)
+from waterQualityPrediction.entity import (DataIngestionConfig,
+                                           DataTransformationConfig)
 
 class ConfigurationManager:
     def __init__(
@@ -15,10 +16,6 @@ class ConfigurationManager:
 
         create_directories([self.config.artifacts_root])
         
-        
-
-        
-
     
     def get_data_ingestion_config(self) -> DataIngestionConfig:   
         config = self.config.data_ingestion # it read the data_ingestion from the first method of yaml, after this you will in --config-- there is the yaml file first methods
@@ -32,3 +29,15 @@ class ConfigurationManager:
         )
 
         return data_ingestion_config
+    
+    def get_data_transformation_config(self) -> DataTransformationConfig:   
+        config = self.config.data_preprocess 
+
+        create_directories([config.root_dir])
+
+        data_transformation_config = DataTransformationConfig(
+            root_dir=config.root_dir,
+            data_path=config.data_path
+        )
+
+        return data_transformation_config
