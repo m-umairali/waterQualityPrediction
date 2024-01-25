@@ -1,0 +1,1 @@
+from waterQualityPrediction.components.data_ingestion import DataIngestion

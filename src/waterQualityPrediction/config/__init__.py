@@ -1,0 +1,1 @@
+from waterQualityPrediction.config.configuration import ConfigurationManager
