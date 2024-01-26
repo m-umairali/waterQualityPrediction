@@ -8,17 +8,21 @@ from waterQualityPrediction.entity.config_entity import DataTransformationConfig
 class DataTransformation:
     def __init__(self, config: DataTransformationConfig):
         self.config = config
-
-    
+        
+        
     def preprocess_data(self):
         data = pd.read_csv(self.config.data_path)
-        logger.info("Imputing missing values in the dataset")
-        data['ph'] = data.groupby(['Potability'])['ph'].transform('mean')
-        data['Sulfate'] = data.groupby(['Potability'])['Sulfate'].transform('mean')
-        data['Trihalomethanes'] = data.groupby(['Potability'])['Trihalomethanes'].transform('mean')
-        # Removing rows where "ph" is less than or equal to 0
+        
         logger.info("Removing row contain 0")
-        data = data[data["ph"] > 0]
+        # data = data[data["ph"] > 0]
+        data.drop(3014, inplace=True, axis=0)
+
+        
+        logger.info("Imputing missing values in the dataset")
+        grouped_means = data.groupby(['Potability'])[['ph', 'Sulfate', 'Trihalomethanes']].mean()
+        data['ph'] = data['ph'].fillna(data['Potability'].map(grouped_means['ph']))
+        data['Sulfate'] = data['Sulfate'].fillna(data['Potability'].map(grouped_means['Sulfate']))
+        data['Trihalomethanes'] = data['Trihalomethanes'].fillna(data['Potability'].map(grouped_means['Trihalomethanes']))
         
         # Applying Box-Cox transformation to all columns
         logger.info("Normalizing the data with Box-Cox")

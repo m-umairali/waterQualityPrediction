@@ -1,1 +1,3 @@
-from waterQualityPrediction.entity.config_entity import (DataIngestionConfig, DataTransformationConfig)
+from waterQualityPrediction.entity.config_entity import (DataIngestionConfig, 
+                                                         DataTransformationConfig,
+                                                         ModelTrainingConfig)

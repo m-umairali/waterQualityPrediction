@@ -3,7 +3,8 @@ from waterQualityPrediction.utils import read_yaml, create_directories
 from pathlib import Path
 import os
 from waterQualityPrediction.entity import (DataIngestionConfig,
-                                           DataTransformationConfig)
+                                           DataTransformationConfig,
+                                           ModelTrainingConfig)
 
 class ConfigurationManager:
     def __init__(
@@ -41,3 +42,23 @@ class ConfigurationManager:
         )
 
         return data_transformation_config
+    
+    
+    def get_model_trainer_config(self) -> ModelTrainingConfig:
+        config = self.config.model_trainer
+        params = self.params.RandomForest
+
+        create_directories([config.root_dir])
+
+        model_trainer_config = ModelTrainingConfig(
+            root_dir=config.root_dir,
+            train_data_path = config.train_data_path,
+            test_data_path = config.test_data_path,
+            model_name = config.model_name,
+            max_depth = params.max_depth,
+            n_estimators = params.n_estimators,
+            n_jobs = params.n_jobs
+            
+        )
+
+        return model_trainer_config
