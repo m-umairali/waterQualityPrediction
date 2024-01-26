@@ -1,1 +1,4 @@
-key: value
+RandomForest:
+  max_depth: 14
+  n_estimators: 600
+  n_jobs: -1
