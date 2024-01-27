@@ -23,3 +23,11 @@ class ModelTrainingConfig:
     n_estimators: int
     n_jobs: int
     
+@dataclass(frozen=True)
+class ModelEvaluationConfig:
+    root_dir: Path
+    test_data_path: Path
+    model_path: Path
+    all_params: dict
+    metric_file_name: Path
+    
