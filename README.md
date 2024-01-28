@@ -1,6 +1,6 @@
-# YouTube Watch History Analysis
+# Water Quality Analysis
 
-This project analyzes a user's YouTube watch history data downloaded from Google Takeout. It provides insights into watch patterns, content preferences, and overall YouTube consumption.
+This project analyzes a user's data quality values. It provides the results whether the water is potabale or not
 
 ### Getting Your YouTube History Data
 
