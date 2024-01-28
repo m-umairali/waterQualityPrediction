@@ -2,16 +2,10 @@
 
 This project analyzes a user's data quality values. It provides the results whether the water is potabale or not
 
-### Getting Your YouTube History Data
+### How to start with
 
-1. Go to the Google Takeout website: [Google Takeout](https://takeout.google.com/)
-2. Sign in with your Google account.
-3. Select "YouTube History" under "Choose data to export".
-4. Choose **JOSN** file type and delivery options.
-5. Click "Create export".
-6. Wait for the export process to complete and download the file.
+1. Fill out all the values taken by your water sample
 
-##### Or refer to this blog at [dev.to](https://dev.to/ubershmekel/what-did-i-watch-most-on-youtube-1ol2).
 
 ### Benefits
 
@@ -55,7 +49,7 @@ This guide helps you set up and run this project using Docker Compose. The proje
 1. Clone the Repository:
 
    ```bash
-   git clone https://github.com/arv-anshul/yt-watch-history
+   git clone https://github.com/m-umairali/water-QualityPrediction
    ```
 
 2. Configuration:
