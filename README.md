@@ -41,7 +41,7 @@ python app.py
 [![Contributor](https://i.ibb.co/F8YJJVS/35041063.jpg)](https://imgbb.com/){:height="200px" width="300px"}
 
 <a href="https://imgbb.com/">
-  <img src="https://i.ibb.co/F8YJJVS/35041063.jpg" alt="35041063" width="200" height="100">
+  <img src="https://i.ibb.co/F8YJJVS/35041063.jpg" alt="35041063" width="100" height="100">
 </a>
 
 
