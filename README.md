@@ -12,64 +12,30 @@
 `Water-Quality-Predictor` will take your water sample values (ph, conductivity, sulfate etc) and tell you whether you should drink or not
 
 <p align="center">
-  <img width="700" align="center" src="https://user-images.githubusercontent.com/9840435/60266022-72a82400-98e7-11e9-9958-f9004c2f97e1.gif" alt="demo"/>
-</p>
-
-Generated `README.md`:
-
-<p align="center">
   <a href="https://ibb.co/Cny7cdM"><img src="https://i.ibb.co/RCK0FnB/Untitled-design.png" alt="Untitled-design" border="0"></a>
   <img width="700" src="https://user-images.githubusercontent.com/9840435/60266090-9cf9e180-98e7-11e9-9cac-3afeec349bbc.jpg" alt="cli output"/>
 </p>
 
-Example of `package.json` with good meta data:
-
-```json
-// The package.json is not required to run README-MD-GENERATOR
-{
-  "name": "readme-md-generator",
-  "version": "0.1.3",
-  "description": "CLI that generates beautiful README.md files.",
-  "author": "Franck Abgrall",
-  "license": "MIT",
-  "homepage": "https://github.com/kefranabg/readme-md-generator#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kefranabg/readme-md-generator.git"
-  },
-  "bugs": {
-    "url": "https://github.com/kefranabg/readme-md-generator/issues"
-  },
-  "engines": {
-    "npm": ">=5.5.0",
-    "node": ">=9.3.0"
-  }
-}
-```
 
 ## 🚀 Usage
 
-Make sure you have [npx](https://www.npmjs.com/package/npx) installed (`npx` is shipped by default since npm `5.2.0`)
-
-Just run the following command at the root of your project and answer questions:
+Just run the following command for testing the app:
 
 ```sh
-npx readme-md-generator
+conda crate -n water-quality-prediction
 ```
-
-Or use default values for all questions (`-y`):
 
 ```sh
-npx readme-md-generator -y
+conda activate water-quality-prediction
 ```
-
-Use your own `ejs` README template (`-p`):
 
 ```sh
-npx readme-md-generator -p path/to/my/own/template.md
+pip install -r requirement.txt
+```
+```sh
+python app.py
 ```
 
-You can find [ejs README template examples here](https://github.com/kefranabg/readme-md-generator/tree/master/templates).
 
 ## Code Contributors
 
