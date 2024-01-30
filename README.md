@@ -1,11 +1,11 @@
 <h1 align="center">Water Quality Prediction App</h1>
 <p align="center">
-  <a href="https://twitter.com/umair_ali_11l">
-    <img alt="Twitter: FranckAbgrall" src="https://img.shields.io/twitter/follow/Umair.svg?style=social" target="_blank" />
+  <a href="https://twitter.com/umair_ali_11">
+    <img alt="Twitter: Umair" src="https://img.shields.io/twitter/follow/Umair.svg?style=social" target="_blank" />
   </a>
 </p>
 
-> CLI that generates beautiful README.md files.<br /> `readme-md-generator` will suggest you default answers by reading your `package.json` and `git` configuration.
+> A Water Quality Prediction Application <br /> `Water-Quality-Predictor` will tell you whether you water is potable or not
 
 ## ✨ Demo
 
