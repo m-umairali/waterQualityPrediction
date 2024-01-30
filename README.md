@@ -1,90 +1,141 @@
-# Water Quality Analysis
+<h1 align="center">Water Quality Prediction App</h1>
+<p align="center">
+  <img src="https://img.shields.io/npm/v/readme-md-generator.svg?orange=blue" />
+  <a href="https://www.npmjs.com/package/readme-md-generator">
+    <img alt="downloads" src="https://img.shields.io/npm/dm/readme-md-generator.svg?color=blue" target="_blank" />
+  </a>
+  <a href="https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg" target="_blank" />
+  </a>
+  <a href="https://codecov.io/gh/kefranabg/readme-md-generator">
+    <img src="https://codecov.io/gh/kefranabg/readme-md-generator/branch/master/graph/badge.svg" />
+  </a>
+  <a href="https://github.com/frinyvonnick/gitmoji-changelog">
+    <img src="https://img.shields.io/badge/changelog-gitmoji-brightgreen.svg" alt="gitmoji-changelog">
+  </a>
+  <a href="https://twitter.com/FranckAbgrall">
+    <img alt="Twitter: FranckAbgrall" src="https://img.shields.io/twitter/follow/FranckAbgrall.svg?style=social" target="_blank" />
+  </a>
+</p>
 
-This project analyzes a user's data quality values. It provides the results whether the water is potabale or not
+> CLI that generates beautiful README.md files.<br /> `readme-md-generator` will suggest you default answers by reading your `package.json` and `git` configuration.
 
-### How to start with
+## ✨ Demo
 
-1. Fill out all the values taken by your water sample
+`readme-md-generator` is able to read your environment (package.json, git config...) to suggest you default answers during the `README.md` creation process:
 
+<p align="center">
+  <img width="700" align="center" src="https://user-images.githubusercontent.com/9840435/60266022-72a82400-98e7-11e9-9958-f9004c2f97e1.gif" alt="demo"/>
+</p>
 
-### Benefits
+Generated `README.md`:
 
-- Gain valuable insights into your YouTube viewing habits.
-- Discover your content preferences and identify areas of interest.
-- Track your progress towards achieving your YouTube goals.
-- Make informed decisions about your YouTube consumption.
+<p align="center">
+  <img width="700" src="https://user-images.githubusercontent.com/9840435/60266090-9cf9e180-98e7-11e9-9cac-3afeec349bbc.jpg" alt="cli output"/>
+</p>
 
-### Project's Notebooks
+Example of `package.json` with good meta data:
 
-If you want to see my 📓 notebooks where I have done some interesting analysis on the datasets which I have used in this project then you can se them in my [**@arv-anshul/notebooks**](https://github.com/arv-anshul/notebooks/tree/main/yt-watch-history) github repository.
+```json
+// The package.json is not required to run README-MD-GENERATOR
+{
+  "name": "readme-md-generator",
+  "version": "0.1.3",
+  "description": "CLI that generates beautiful README.md files.",
+  "author": "Franck Abgrall",
+  "license": "MIT",
+  "homepage": "https://github.com/kefranabg/readme-md-generator#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kefranabg/readme-md-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kefranabg/readme-md-generator/issues"
+  },
+  "engines": {
+    "npm": ">=5.5.0",
+    "node": ">=9.3.0"
+  }
+}
+```
 
-### Tech Stack
+## 🚀 Usage
 
-![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=fff)
-![MLflow](https://img.shields.io/badge/MLflow-0194E2?logo=mlflow&logoColor=fff)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=fff)
-![NLTK](https://img.shields.io/badge/NLTK-3776AB?logo=python&logoColor=fff)
-![Plotly](https://img.shields.io/badge/Plotly-3F4F75?logo=plotly&logoColor=fff)
-![Polars](https://img.shields.io/badge/Polars-CD792C?logo=polars&logoColor=fff)
-![Pydantic](https://img.shields.io/badge/Pydantic-E92063?logo=pydantic&logoColor=fff)
-![Ruff](https://img.shields.io/badge/Ruff-FCC21B?logo=ruff&logoColor=000)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=fff)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=fff)
-![YouTube Badge](https://img.shields.io/badge/YouTube-F00?logo=youtube&logoColor=fff)
+Make sure you have [npx](https://www.npmjs.com/package/npx) installed (`npx` is shipped by default since npm `5.2.0`)
 
-## Project Setup Guide
+Just run the following command at the root of your project and answer questions:
 
-This guide helps you set up and run this project using Docker Compose. The project consists of a frontend and backend service.
+```sh
+npx readme-md-generator
+```
 
-### Prerequisites
+Or use default values for all questions (`-y`):
 
-- [🍀 MongoDB Database URL](https://mongodb.com)
-- [💥 Youtube Data v3 API Key](https://developers.google.com/youtube/v3/docs/)
-- [🐳 Docker](https://www.docker.com/get-started)
-- [🐳 Docker Compose](https://docs.docker.com/compose/install/)
+```sh
+npx readme-md-generator -y
+```
 
-### Steps to Set Up
+Use your own `ejs` README template (`-p`):
 
-1. Clone the Repository:
+```sh
+npx readme-md-generator -p path/to/my/own/template.md
+```
 
-   ```bash
-   git clone https://github.com/m-umairali/water-QualityPrediction
-   ```
+You can find [ejs README template examples here](https://github.com/kefranabg/readme-md-generator/tree/master/templates).
 
-2. Configuration:
+## Code Contributors
 
-   - Open the `docker-compose.yml` file in the project root.
+This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
+<a href="https://github.com/kefranabg/readme-md-generator/graphs/contributors"><img src="https://opencollective.com/readme-md-generator/contributors.svg?width=890&button=false" /></a>
 
-   - Set the following environment variables in the `frontend` service:
+## Financial Contributors
 
-     - `YT_API_KEY`: Replace `null` with your YouTube API key.
-     - `API_HOST`: Should match the name of the backend service **(`backend` in this case)**.
-     - `API_PORT`: Port number for the backend service **(default is `8001`)**.
-     - `LOG_LEVEL`: Logging level **(default is `INFO`)**.
+Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/readme-md-generator/contribute)]
 
-   - Set the following environment variables in the `backend` service:
+### Individuals
 
-     - `MONGODB_URL`: Replace `null` with your MongoDB URL.
-     - `API_PORT`: Port number for the backend service **(default is `8001`)**.
-     - `API_HOST`: Set to `"0.0.0.0"`.
-     - `LOG_LEVEL`: Logging level **(default is `INFO`)**.
+<a href="https://opencollective.com/readme-md-generator"><img src="https://opencollective.com/readme-md-generator/individuals.svg?width=890"></a>
 
-3. Build and Run:
+### Organizations
 
-   ```bash
-   docker-compose up --build
-   ```
+Support this project with your organization. Your logo will show up here with a link to your website. [[Contribute](https://opencollective.com/readme-md-generator/contribute)]
+<a href="https://opencollective.com/readme-md-generator/organization/0/website"><img src="https://opencollective.com/readme-md-generator/organization/0/avatar.svg"></a>
+<a href="https://opencollective.com/readme-md-generator/organization/1/website"><img src="https://opencollective.com/readme-md-generator/organization/1/avatar.svg"></a>
+<a href="https://opencollective.com/readme-md-generator/organization/2/website"><img src="https://opencollective.com/readme-md-generator/organization/2/avatar.svg"></a>
+<a href="https://opencollective.com/readme-md-generator/organization/3/website"><img src="https://opencollective.com/readme-md-generator/organization/3/avatar.svg"></a>
+<a href="https://opencollective.com/readme-md-generator/organization/4/website"><img src="https://opencollective.com/readme-md-generator/organization/4/avatar.svg"></a>
+<a href="https://opencollective.com/readme-md-generator/organization/5/website"><img src="https://opencollective.com/readme-md-generator/organization/5/avatar.svg"></a>
+<a href="https://opencollective.com/readme-md-generator/organization/6/website"><img src="https://opencollective.com/readme-md-generator/organization/6/avatar.svg"></a>
+<a href="https://opencollective.com/readme-md-generator/organization/7/website"><img src="https://opencollective.com/readme-md-generator/organization/7/avatar.svg"></a>
+<a href="https://opencollective.com/readme-md-generator/organization/8/website"><img src="https://opencollective.com/readme-md-generator/organization/8/avatar.svg"></a>
+<a href="https://opencollective.com/readme-md-generator/organization/9/website"><img src="https://opencollective.com/readme-md-generator/organization/9/avatar.svg"></a>
 
-4. Access the application:
+## 🤝 Contributing
 
-   - **Frontend:** Open a browser and go to `http://localhost:8501`.
-   - **Backend:** Accessed internally via the configured API endpoints. Or access locally at `http://0.0.0.0:8001`.
+Contributions, issues and feature requests are welcome.<br />
+Feel free to check [issues page](https://github.com/kefranabg/readme-md-generator/issues) if you want to contribute.<br />
+[Check the contributing guide](./CONTRIBUTING.md).<br />
 
-> [!NOTE]
->
-> - Frontend service runs on port `8501` locally.
-> - Backend service runs on port `8001` locally.
-> - Make sure no other services are running on these ports.
-> - `/frontend` and `/backend` directories are mounted as volumes for the respective services.
-> - `/frontend/data` and `/backend/ml_models` directories are mounted for persistent data storage.
+## Author
+
+👤 **Franck Abgrall**
+
+- Twitter: [@FranckAbgrall](https://twitter.com/FranckAbgrall)
+- Github: [@kefranabg](https://github.com/kefranabg)
+
+## Show your support
+
+Please ⭐️ this repository if this project helped you!
+
+<a href="https://www.patreon.com/FranckAbgrall">
+  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+</a>
+
+## 📝 License
+
+Copyright © 2019 [Franck Abgrall](https://github.com/kefranabg).<br />
+This project is [MIT](https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE) licensed.
+
+---
+
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
