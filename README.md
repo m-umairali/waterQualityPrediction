@@ -38,18 +38,14 @@ python app.py
 
 ## Code Contributors
 
-<a href="https://github.com/alishaw99/"><img src="https://opencollective.com/readme-md-generator/contributors.svg?width=890&button=false" /></a>
+[![Contributor](https://i.ibb.co/F8YJJVS/35041063.jpg)](https://imgbb.com/){:height="200px" width="300px"}
 
-## Financial Contributors
+<a href="https://imgbb.com/">
+  <img src="https://i.ibb.co/F8YJJVS/35041063.jpg" alt="35041063" width="200" height="100">
+</a>
 
-Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/readme-md-generator/contribute)]
 
-### Individuals
 
-<a href="https://opencollective.com/readme-md-generator"><img src="https://opencollective.com/readme-md-generator/individuals.svg?width=890"></a>
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/F8YJJVS/35041063.jpg" alt="35041063" width=890></a>
-
-[![Contributor](https://i.ibb.co/F8YJJVS/35041063.jpg)](https://imgbb.com/){:height="100px" width="200px"}
 
 
 ### Organizations
