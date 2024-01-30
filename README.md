@@ -9,7 +9,7 @@
 
 ## ✨ Demo
 
-`readme-md-generator` is able to read your environment (package.json, git config...) to suggest you default answers during the `README.md` creation process:
+`Water-Quality-Predictor` will take your water sample values (ph, conductivity, sulfate etc) and tell you whether you should drink or not
 
 <p align="center">
   <img width="700" align="center" src="https://user-images.githubusercontent.com/9840435/60266022-72a82400-98e7-11e9-9958-f9004c2f97e1.gif" alt="demo"/>
@@ -18,6 +18,7 @@
 Generated `README.md`:
 
 <p align="center">
+  <a href="https://ibb.co/Cny7cdM"><img src="https://i.ibb.co/RCK0FnB/Untitled-design.png" alt="Untitled-design" border="0"></a>
   <img width="700" src="https://user-images.githubusercontent.com/9840435/60266090-9cf9e180-98e7-11e9-9cac-3afeec349bbc.jpg" alt="cli output"/>
 </p>
 
