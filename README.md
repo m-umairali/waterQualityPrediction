@@ -1,7 +1,7 @@
 <h1 align="center">Water Quality Prediction App</h1>
 <p align="center">
   <a href="https://twitter.com/umair_ali_11l">
-    <img alt="Twitter: FranckAbgrall" src="https://img.shields.io/twitter/follow/FranckAbgrall.svg?style=social" target="_blank" />
+    <img alt="Twitter: FranckAbgrall" src="https://img.shields.io/twitter/follow/Umair.svg?style=social" target="_blank" />
   </a>
 </p>
 
