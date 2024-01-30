@@ -13,7 +13,6 @@
 
 <p align="center">
   <a href="https://ibb.co/Cny7cdM"><img src="https://i.ibb.co/RCK0FnB/Untitled-design.png" alt="Untitled-design" border="0"></a>
-  <img width="700" src="https://user-images.githubusercontent.com/9840435/60266090-9cf9e180-98e7-11e9-9cac-3afeec349bbc.jpg" alt="cli output"/>
 </p>
 
 
@@ -39,8 +38,7 @@ python app.py
 
 ## Code Contributors
 
-This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
-<a href="https://github.com/kefranabg/readme-md-generator/graphs/contributors"><img src="https://opencollective.com/readme-md-generator/contributors.svg?width=890&button=false" /></a>
+<a href="https://github.com/alishaw99/"><img src="https://opencollective.com/readme-md-generator/contributors.svg?width=890&button=false" /></a>
 
 ## Financial Contributors
 
@@ -49,6 +47,7 @@ Become a financial contributor and help us sustain our community. [[Contribute](
 ### Individuals
 
 <a href="https://opencollective.com/readme-md-generator"><img src="https://opencollective.com/readme-md-generator/individuals.svg?width=890"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/F8YJJVS/35041063.jpg" alt="35041063" width=890></a>
 
 ### Organizations
 
