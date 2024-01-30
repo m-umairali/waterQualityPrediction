@@ -48,7 +48,7 @@ python app.py
 
 ## Author
 
-👤 **Franck Abgrall**
+👤 **Umair**
 
 - Twitter: [@FranckAbgrall](https://twitter.com/umair_ali_11)
 - Github: [@kefranabg](https://github.com/m-umairali)
