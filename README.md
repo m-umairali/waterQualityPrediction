@@ -38,12 +38,13 @@ python app.py
 
 ## Code Contributors
 
-[![Contributor](https://i.ibb.co/F8YJJVS/35041063.jpg)](https://imgbb.com/){:height="200px" width="300px"}
-
 <a href="https://imgbb.com/">
   <img src="https://i.ibb.co/F8YJJVS/35041063.jpg" alt="35041063" width="100" height="100">
 </a>
 
+<a href="https://github.com/alishaw99" target="_blank">
+  <img alt="GitHub followers" src="https://img.shields.io/github/followers/alishaw99?label=Follow&style=social">
+</a>
 
 
 
