@@ -50,8 +50,8 @@ python app.py
 
 👤 **Umair**
 
-- Twitter: [@FranckAbgrall](https://twitter.com/umair_ali_11)
-- Github: [@kefranabg](https://github.com/m-umairali)
+- Twitter: [@Umair](https://twitter.com/umair_ali_11)
+- Github: [@m-umairali](https://github.com/m-umairali)
 
 
 ## 📝 License
